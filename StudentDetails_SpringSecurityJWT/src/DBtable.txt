@@ -1,0 +1,17 @@
+CREATE TABLE `neodb`.`student` (
+  `studid` INT NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(45) NOT NULL,
+  `lastname` VARCHAR(45) NOT NULL,
+  `mobilenumber` INT NOT NULL,
+  `emailaddress` VARCHAR(45) NOT NULL,
+  `project` VARCHAR(45) NOT NULL,
+  `photoupload` BLOB NULL,
+  PRIMARY KEY (`studid`));
+
+ 
+CREATE TABLE `neodb`.`project` (
+  `projid` INT NOT NULL AUTO_INCREMENT,
+  `projname` VARCHAR(45) NOT NULL,
+  `duration` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`projid`));
+ 
